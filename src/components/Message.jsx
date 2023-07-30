@@ -3,7 +3,6 @@ import { UserAuth } from "../context/AuthContext";
 const Message = ({ message }) => {
   const { currentUser } = UserAuth();
 
-  console.log(message)
   return (
     <div>
       <div className={`chat ${message.uid === currentUser.uid ? "chat-end" : "chat-start"}`}>
