@@ -12,10 +12,10 @@ const Message = ({ message }) => {
             <img src={message.avatar} />
           </div>
         </div>
-        <div className="chat-header">
+        <div className="chat-header text-pink-500 font-medium">
           {message.name}
         </div>
-        <div className="chat-bubble">{message.text}</div>
+        <div className="chat-bubble bg-blue-500">{message.text}</div>
       </div>
     </div>
   );
